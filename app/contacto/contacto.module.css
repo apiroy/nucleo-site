@@ -1,0 +1,104 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.header p {
+  color: var(--on-surface-variant);
+  font-size: 1.1rem;
+}
+
+.formCard {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 40px 100px rgba(0,0,0,0.4);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+}
+
+.formGroup input, .formGroup select, .formGroup textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.formGroup select option {
+  background: var(--surface);
+  color: #fff;
+}
+
+.successState {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.successIcon {
+  font-size: 4rem;
+  color: var(--tertiary);
+  margin-bottom: 1.5rem;
+}
+
+/* Background */
+.bgMesh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--background);
+}
+
+.bgBlob {
+  position: absolute;
+  width: 80vw;
+  height: 80vw;
+  background: radial-gradient(circle, var(--secondary) 0%, transparent 60%);
+  filter: blur(120px);
+  opacity: 0.1;
+}
