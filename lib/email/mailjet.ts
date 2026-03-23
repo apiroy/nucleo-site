@@ -17,7 +17,7 @@ export async function sendEmail({
   to, 
   subject, 
   html, 
-  fromEmail = 'info@madrenieve.com.ar', 
+  fromEmail = 'info@nucleoai.site', 
   fromName = 'Nucleoai.site' 
 }: SendEmailOptions) {
   try {
