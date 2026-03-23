@@ -1,8 +1,8 @@
 import Mailjet from 'node-mailjet';
 
 const mailjet = new Mailjet({
-  apiKey: process.env.MAILJET_API_KEY || 'a82909bd5db7ca5ba3c28cc22accffa1',
-  apiSecret: process.env.MAILJET_API_SECRET || '2ee1e34f8acd3df5b56939d3c7746dd7'
+  apiKey: process.env.MAILJET_API_KEY || 'c2c942122c0fcdf8775c2c576ac25ef2',
+  apiSecret: process.env.MAILJET_API_SECRET || '48da47cca4a03557c2f3646cee1c6948'
 });
 
 export interface SendEmailOptions {
