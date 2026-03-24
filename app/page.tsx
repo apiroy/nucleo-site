@@ -52,8 +52,12 @@ export default function Home() {
               Pensado para emprendedores que buscan independencia y control total.
             </p>
             <div className={styles.heroCtas}>
-              <Link href="/#planes" className="button-primary" style={{textDecoration: 'none'}}>Ver Planes y Precios</Link>
-              <Link href="/agendar" className={styles.buttonSecondary} style={{textDecoration: 'none'}}>Agendar Consultoría</Link>
+              <Link href="/curso-gratis" className={styles.buttonAccent}>
+                 <span className="material-symbols-outlined">download</span>
+                 Guía Gratis
+              </Link>
+              <Link href="/#planes" className="button-primary" style={{textDecoration: 'none'}}>Ver Planes</Link>
+              <Link href="/agendar" className={styles.buttonSecondary} style={{textDecoration: 'none'}}>Agendar</Link>
             </div>
           </div>
           <div className={styles.heroImage}>

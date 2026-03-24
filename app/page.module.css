@@ -163,6 +163,31 @@
   background: var(--surface-container-high);
 }
 
+.buttonAccent {
+  background: linear-gradient(135deg, var(--secondary), var(--tertiary));
+  color: #000 !important;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0, 245, 255, 0.3);
+  text-decoration: none;
+}
+
+.buttonAccent:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 245, 255, 0.5);
+  filter: brightness(1.1);
+}
+
 .heroImage {
     height: 100%;
     min-height: 520px;
